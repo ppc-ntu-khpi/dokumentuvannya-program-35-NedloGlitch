@@ -9,9 +9,9 @@ public class EmployeesTest {
         String[] skills = {"Microsoft Word", "TeX", "OpenOffice", "Markdown"};
         Editor ed = new Editor(true, skills, "Phil Coulson", "Chief Editor", 3, "Publishing");
         Employee em = new Employee("Melinda May", "Assistant", 1, "Publishing");
-
+        Editor mem = new Editor();
         Artist art = new Artist(skills);
-        Employee[] people = {ed, em, art};
+        Employee[] people = {ed, em, art, mem};
         Manager man = new Manager(people, "Steve Ballmer", "CEO", 3, "Publishing");
 
         System.out.println(man);
