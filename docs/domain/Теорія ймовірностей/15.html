@@ -1,0 +1,825 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Документ без названия</title>
+<style type="text/css">
+<!--
+div.MsoNormal {mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+li.MsoNormal {mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoNormal {mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE {mso-style-name:"";
+	mso-spl-e:yes;}
+-->
+</style>
+</head>
+
+<body>
+<p class="MsoNormal" style='margin-top:43.45pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:1.7pt;margin-bottom:.0001pt;mso-outline-level:1;background:
+white'><b><span style='font-size:14.0pt;letter-spacing:-.25pt;
+mso-ansi-language:UK' lang="uk" xml:lang="uk">1.6 Правило <span class="SpellE">Байеса</span> та формула
+  повної ймовірності</span></b><span style='font-size:14.0pt;mso-ansi-language:
+UK' lang="uk" xml:lang="uk">
+    <o:p></o:p>
+  </span></p>
+<p class="MsoNormal" style='margin-top:18.7pt;margin-right:.7pt;margin-bottom:
+0cm;margin-left:.95pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+28.8pt;line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">Розглядаючи умовну ймовірність, ми
+  визначили, що, наприклад, ймовірність навмання витягти валет із колоди, яка
+  містить 52 карти, буде рівна<sub>
+  <!--[if gte vml 1]><v:shape id="_x0000_i1138"
+ type="#_x0000_t75" style='width:22.5pt;height:20.25pt'>
+ <v:imagedata src="257.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="30" height="27"
+src="258.jpg" v:shapes="_x0000_i1138" />
+  <![endif]>
+  </sub>.
+  Така ймовірність називається
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:2.15pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:.7pt;margin-bottom:.0001pt;line-height:19.9pt;mso-line-height-rule:
+exactly;background:white'><span style='font-size:14.0pt;letter-spacing:
+-.3pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">апріорною ймовірністю події.</span><span
+style='font-size:14.0pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-left:1.2pt;text-align:justify;text-indent:
+28.8pt;line-height:19.9pt;mso-line-height-rule:exactly;background:white'><span style='font-size:14.0pt;letter-spacing:-.25pt;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">Отже,
+  апріорна ймовірність - це ймовірність оцінки події до її появи, яка може
+  змінюватись після подальшого аналізу ситуації.</span><span
+style='font-size:14.0pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:.5pt;margin-bottom:.0001pt;text-align:justify;text-indent:29.3pt;
+line-height:19.9pt;mso-line-height-rule:exactly;background:white'><span style='font-size:14.0pt;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">Розглянемо ймовірність,
+  яка знаходиться після того, як <span style='letter-spacing:-.25pt'>наслідки випробування
+    уже відомі. Таку ймовірність називають </span>апостеріорною ймовірністю.
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-left:30.0pt;text-align:justify;line-height:
+19.9pt;mso-line-height-rule:exactly;background:white'><span
+style='font-size:14.0pt;letter-spacing:-.25pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">Нехай три
+  верстати<sub>
+  <!--[if gte vml 1]><v:shape id="_x0000_i1139" type="#_x0000_t75"
+ style='width:46.5pt;height:13.5pt'>
+ <v:imagedata src="259.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="62" height="18"
+src="260.jpg" v:shapes="_x0000_i1139" />
+  <![endif]>
+  </sub>виробляють
+  деталі для двигунів.</span><span style='font-size:14.0pt;mso-ansi-language:
+UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:.7pt;margin-right:.25pt;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;line-height:19.9pt;
+mso-line-height-rule:exactly;background:white'><span style='font-size:
+14.0pt;letter-spacing:-.25pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">Верстат <i>А </i>виробляє
+  45%, верстат <i>В - </i>30%, а верстат С -25% деталей </span><span
+style='font-size:14.0pt;letter-spacing:-.3pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">для
+    двигунів. Серед них 6% деталей, вироблених верстатом <i>А </i>не </span><span style='font-size:14.0pt;letter-spacing:-.25pt;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">відповідають
+      встановленим стандартам якості, для верстатів<sub>
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1140" type="#_x0000_t75" style='width:28.5pt;height:14.25pt'>
+ <v:imagedata src="261.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="38" height="19"
+src="262.jpg" v:shapes="_x0000_i1140" />
+  <![endif]>
+  </sub></span><span style='font-size:14.0pt;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">-
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:.5pt;margin-bottom:.0001pt;text-align:justify;line-height:19.9pt;
+mso-line-height-rule:exactly;background:white'><span style='font-size:
+14.0pt;letter-spacing:-.25pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">ці цифри 4% та 3%
+  відповідно. Навмання відібрали одну деталь і </span><span
+style='font-size:14.0pt;letter-spacing:-.15pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">виявили, що
+    вона - дефектна. Яка ймовірність того, що відібрана </span><span
+style='font-size:14.0pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">деталь вироблена верстатом <i>А?</i>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">Відповісти на це питання означає знайти
+  апостеріорну <span style='letter-spacing:-.2pt'>ймовірність події, що відібрана
+    деталь вироблена верстатом <i>А.
+  <o:p></o:p>
+</i></span></span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;mso-outline-level:1;background:white'>
+  <!--[if gte vml 1]><v:line
+ id="_x0000_s1045" style='position:absolute;left:0;text-align:left;z-index:3;
+ mso-position-horizontal-relative:margin' from="399.6pt,254.15pt" to="399.6pt,354.45pt"
+ o:allowincell="f" strokeweight="1.7pt">
+ <w:wrap anchorx="margin"/>
+</v:line><![endif]-->
+  <![if !vml]>
+  <![endif]>
+  <!--[if gte vml 1]><v:line
+ id="_x0000_s1046" style='position:absolute;left:0;text-align:left;z-index:4;
+ mso-position-horizontal-relative:margin' from="401.05pt,461.75pt" to="401.05pt,579.1pt"
+ o:allowincell="f" strokeweight=".7pt">
+ <w:wrap anchorx="margin"/>
+</v:line><![endif]-->
+  <![if !vml]>
+  <![endif]>
+  <span style='font-size:14.0pt;line-height:150%;letter-spacing:-.2pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">Для початку, нехай <sub>
+  <!--[if gte vml 1]><v:shape id="_x0000_i1141"
+ type="#_x0000_t75" style='width:46.5pt;height:14.25pt'>
+ <v:imagedata src="263.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="62" height="19"
+src="264.jpg" v:shapes="_x0000_i1141" />
+  <![endif]>
+  </sub></span><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.05pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">- це події, що деталі вироблені</span><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;letter-spacing:-.25pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">верстатом <i>А,<span
+style='mso-spacerun:yes'>    </span></i>верстатом<span
+style='mso-spacerun:yes'>    </span><i>В<span style='mso-spacerun:yes'>    </span></i>і<span style='mso-spacerun:yes'>    </span>верстатом<span
+style='mso-spacerun:yes'>    </span>С,<span style='mso-spacerun:yes'>    </span>відповідно.<span style='mso-spacerun:yes'>    </span>Цей експеримент
+  можна зобразити за допомогою діаграми Венна.</span><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" align="center" style='margin-top:0cm;margin-right:.25pt;
+margin-bottom:0cm;margin-left:1.45pt;margin-bottom:.0001pt;text-align:center;
+text-indent:28.8pt;line-height:150%;background:white'><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1142" type="#_x0000_t75" style='width:296.25pt;height:153pt'>
+ <v:imagedata src="265.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="395" height="204"
+src="266.jpg" v:shapes="_x0000_i1142" />
+  <![endif]>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;mso-outline-level:1;background:white'><span
+style='font-size:14.0pt;line-height:150%;letter-spacing:-.2pt;mso-ansi-language:
+UK' lang="uk" xml:lang="uk">Три несумісні події <i>А, В </i>і <i>С </i>розбивають простір елементарних </span><span style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">наслідків<sub>
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1143" type="#_x0000_t75" style='width:11.25pt;height:12.75pt'>
+ <v:imagedata src="267.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="15" height="17"
+src="268.jpg" v:shapes="_x0000_i1143" />
+  <![endif]>
+  </sub>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">Подія
+  <!--[if gte vml 1]><v:shape id="_x0000_i1144"
+ type="#_x0000_t75" style='width:12pt;height:14.25pt'>
+ <v:imagedata src="269.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="16" height="19"
+src="270.jpg" v:shapes="_x0000_i1144" />
+  <![endif]>
+  полягає в появі дефектної деталі в заштрихованій
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;letter-spacing:-.35pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">області.</span><span style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;letter-spacing:-.35pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">1. Подія <sub>
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1145" type="#_x0000_t75" style='width:9pt;height:11.25pt'>
+ <v:imagedata src="271.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="12" height="15"
+src="272.jpg" v:shapes="_x0000_i1145" />
+  <![endif]>
+  </sub>може
+  бути виражена як</span><span style='font-size:14.0pt;line-height:150%;
+mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" align="center" style='margin-top:0cm;margin-right:.25pt;
+margin-bottom:0cm;margin-left:1.45pt;margin-bottom:.0001pt;text-align:center;
+text-indent:28.8pt;line-height:150%;background:white'><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1146" type="#_x0000_t75" style='width:162pt;height:23.25pt'>
+ <v:imagedata src="273.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="216" height="31"
+src="274.jpg" v:shapes="_x0000_i1146" />
+  <![endif]>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;mso-outline-level:1;background:white'><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">Тоді
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" align="center" style='margin-top:0cm;margin-right:.25pt;
+margin-bottom:0cm;margin-left:1.45pt;margin-bottom:.0001pt;text-align:center;
+text-indent:28.8pt;line-height:150%;background:white'><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1147" type="#_x0000_t75" style='width:264pt;height:22.5pt'>
+ <v:imagedata src="275.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="352" height="30"
+src="276.jpg" v:shapes="_x0000_i1147" />
+  <![endif]>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;letter-spacing:-.25pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">Події<span
+style='mso-spacerun:yes'>  </span><sub>
+  <!--[if gte vml 1]><v:shape id="_x0000_i1148"
+ type="#_x0000_t75" style='width:146.25pt;height:17.25pt'>
+ <v:imagedata src="277.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="195" height="23"
+src="278.jpg" v:shapes="_x0000_i1148" />
+  <![endif]>
+  <span
+style='mso-spacerun:yes'> </span></sub></span><span style='font-size:
+14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">- залежні<span
+style='mso-spacerun:yes'>  </span>події. Тому,
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;letter-spacing:-.25pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">використовуючи
+  правило множення, одержуємо формулу:</span><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" align="center" style='margin-top:0cm;margin-right:.25pt;
+margin-bottom:0cm;margin-left:1.45pt;margin-bottom:.0001pt;text-align:center;
+text-indent:28.8pt;line-height:150%;background:white'><sub><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1149" type="#_x0000_t75" style='width:244.5pt;height:24.75pt'>
+ <v:imagedata src="279.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="326" height="33"
+src="280.jpg" v:shapes="_x0000_i1149" />
+  <![endif]>
+  <span
+style='letter-spacing:-.3pt'><span style='mso-spacerun:yes'> </span></span></span></sub><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.3pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">(16)</span><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">Зауважимо, що формулу (16) називають
+  формулою повної ймовірності.
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:0cm;margin-right:.25pt;margin-bottom:0cm;
+margin-left:1.45pt;margin-bottom:.0001pt;text-align:justify;text-indent:28.8pt;
+line-height:150%;mso-list:l11 level1 lfo12;background:white'>
+  <![if !supportLists]>
+  <sub><span style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK'
+lang="uk" xml:lang="uk"><span
+style='mso-list:Ignore'>3.<span style='font:7.0pt &quot;Times New Roman&quot;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></sub>
+  <![endif]>
+  <span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">Подія, яка полягає в появі дефектної
+    деталі за умови, що вона виготовлена верстатом <i>А, </i>виражається як<sub>
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1150" type="#_x0000_t75" style='width:30.75pt;height:12.75pt'>
+ <v:imagedata src="281.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="41" height="17"
+src="282.jpg" v:shapes="_x0000_i1150" />
+  <![endif]>
+  <o:p></o:p>
+</sub></span></p>
+<p class="MsoNormal" style='margin-top:.5pt;margin-right:6.7pt;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:28.55pt;
+line-height:20.65pt;mso-line-height-rule:exactly;background:white'><sub><span style='font-size:14.0pt;mso-ansi-language:UK'
+lang="uk" xml:lang="uk"><span
+style='mso-spacerun:yes'> </span></span></sub><span style='font-size:
+12.0pt;letter-spacing:-.15pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">Отже,<span
+style='mso-spacerun:yes'>    </span>апостеріорна<span
+style='mso-spacerun:yes'>    </span>ймовірність,<span
+style='mso-spacerun:yes'>    </span>що<span style='mso-spacerun:yes'>    </span>дефектна<span style='mso-spacerun:yes'>    </span>деталь </span><span style='font-size:12.0pt;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">виготовлена верстатом <i>А, </i>дорівнює</span><span style='mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-top:1.2pt;background:white'><sub><span style='mso-ansi-language:UK'
+lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1151"
+ type="#_x0000_t75" style='width:307.5pt;height:35.25pt'>
+ <v:imagedata src="283.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="410" height="47"
+src="284.jpg" v:shapes="_x0000_i1151" />
+  <![endif]>
+  </span></sub><sub><span style='font-size:11.0pt;letter-spacing:-.25pt;mso-ansi-language:UK'
+lang="uk" xml:lang="uk"><span
+style='mso-spacerun:yes'> </span></span></sub><span style='font-size:
+11.0pt;letter-spacing:-.25pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">(17)</span><span
+style='mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-left:.85pt;text-align:justify;text-indent:
+26.1pt;line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;letter-spacing:-.25pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">Формула (17)
+  відома як формула <span class="SpellE">Байеса</span> (правило <span class="SpellE">Байеса</span>). </span><span style='font-size:14.0pt;line-height:150%;mso-ansi-language:
+UK' lang="uk" xml:lang="uk">Імовірнісне дерево, що відповідає початковій умові задачі, представлено
+    Рис. 5.
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" align="center" style='margin-left:.85pt;text-align:center;
+text-indent:26.1pt;line-height:150%;background:white'><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1152" type="#_x0000_t75" style='width:3in;height:178.5pt'>
+ <v:imagedata src="285.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="288" height="238"
+src="286.jpg" v:shapes="_x0000_i1152" />
+  <![endif]>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-left:.85pt;text-align:justify;text-indent:
+26.1pt;line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;letter-spacing:-.3pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">Ми можемо обчислити
+  потрібну ймовірність використовуючи наступне міркування (див. формулу (17),
+  рис. 5): чисельник визнача­</span><span style='font-size:14.0pt;
+line-height:150%;letter-spacing:-.2pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">ється як здобуток
+    ймовірностей повздовж гілки
+  <!--[if gte vml 1]><v:shape id="_x0000_i1153"
+ type="#_x0000_t75" style='width:31.5pt;height:12.75pt'>
+ <v:imagedata src="287.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="42" height="17"
+src="288.jpg" v:shapes="_x0000_i1153" />
+  <![endif]>
+  </span><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.25pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">, тоді як зна­менник - сума добутків ймовірностей
+    повздовж кожної гілки <i>(А-И).</i></span><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-left:.85pt;text-align:justify;text-indent:
+26.1pt;line-height:150%;mso-outline-level:1;background:white'><span
+style='font-size:14.0pt;line-height:150%;letter-spacing:-.5pt;mso-ansi-language:
+UK' lang="uk" xml:lang="uk">Маємо<sub>
+  <!--[if gte vml 1]><v:shape id="_x0000_i1154" type="#_x0000_t75"
+ style='width:212.25pt;height:30pt'>
+ <v:imagedata src="289.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="283" height="40"
+src="290.jpg" v:shapes="_x0000_i1154" />
+  <![endif]>
+  </sub></span><span style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='margin-left:.85pt;text-align:justify;text-indent:
+26.1pt;line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;letter-spacing:-.25pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">Розглянемо
+  загальну формулу правила <span class="SpellE">Байеса</span>. </span><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.6pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">Нехай<sub>
+  <!--[if gte vml 1]><v:shape id="_x0000_i1155"
+ type="#_x0000_t75" style='width:69.75pt;height:15pt'>
+ <v:imagedata src="291.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="93" height="20"
+src="292.jpg" v:shapes="_x0000_i1155" />
+  <![endif]>
+  </sub></span><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.3pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">є розбиттям ймовірного простору 5 (тобто</span><span style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:27.0pt;line-height:
+150%;background:white'><sub><span style='font-size:14.0pt;line-height:
+150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1156"
+ type="#_x0000_t75" style='width:68.25pt;height:16.5pt'>
+ <v:imagedata src="293.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="91" height="22"
+src="294.jpg" v:shapes="_x0000_i1156" />
+  <![endif]>
+  <span
+style='letter-spacing:-.05pt'><span style='mso-spacerun:yes'> </span></span></span></sub><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.05pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">- несумісні події, такі що<sub>
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1157" type="#_x0000_t75" style='width:112.5pt;height:16.5pt'>
+ <v:imagedata src="295.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="150" height="22"
+src="296.jpg" v:shapes="_x0000_i1157" />
+  <![endif]>
+  </sub></span><span style='font-size:14.0pt;line-height:150%;letter-spacing:
+-.3pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">і не</span><span style='font-size:14.0pt;
+line-height:150%;letter-spacing:-.05pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">хай<span
+style='mso-spacerun:yes'>  </span><i>А<span style='mso-spacerun:yes'>  </span></i>-<span
+style='mso-spacerun:yes'>  </span>подія,<span style='mso-spacerun:yes'>   </span>що<span style='mso-spacerun:yes'>   </span>повністю<span
+style='mso-spacerun:yes'>   </span>містить<span style='mso-spacerun:yes'>  </span>результат<span style='mso-spacerun:yes'>  </span>експерименту </span>
+  <!--[if gte vml 1]><v:line
+ id="_x0000_s1047" style='position:absolute;left:0;text-align:left;z-index:5;
+ mso-position-horizontal-relative:margin;mso-position-vertical-relative:text'
+ from="410.9pt,498.7pt" to="410.9pt,586.05pt" o:allowincell="f" strokeweight=".25pt">
+ <w:wrap anchorx="margin"/>
+</v:line><![endif]-->
+  <![if !vml]>
+  <![endif]>
+  <span style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1158" type="#_x0000_t75" style='width:45pt;height:11.25pt'>
+ <v:imagedata src="297.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="60" height="15"
+src="298.jpg" v:shapes="_x0000_i1158" />
+  <![endif]>
+  <span
+style='letter-spacing:-.35pt'><span style='mso-spacerun:yes'> </span>Тоді<span
+style='mso-spacerun:yes'>     </span>апостеріорна<span
+style='mso-spacerun:yes'>     </span>ймовірність<sub>
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1159" type="#_x0000_t75" style='width:96pt;height:15.75pt'>
+ <v:imagedata src="299.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="128" height="21"
+src="300.jpg" v:shapes="_x0000_i1159" />
+  <![endif]>
+  </sub> </span>розглядається як
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:27.0pt;line-height:
+150%;background:white'><sub><span style='font-size:14.0pt;line-height:
+150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1160"
+ type="#_x0000_t75" style='width:296.25pt;height:70.5pt'>
+ <v:imagedata src="301.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="395" height="94"
+src="302.jpg" v:shapes="_x0000_i1160" />
+  <![endif]>
+  <span
+style='letter-spacing:-.45pt'><span style='mso-spacerun:yes'> </span></span></span></sub><b><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.45pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">(18)</span></b><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:27.0pt;line-height:
+150%;background:white'><b><span style='font-size:14.0pt;line-height:
+150%;letter-spacing:-.05pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">Приклад 11. </span></b><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.05pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">Було проведено обстеження великого столичного </span><span style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">району з
+  метою визначення величини щорічних <span style='letter-spacing:-.25pt'>доходів
+    сімейних пар, якщо працює тільки чоловік, а </span><span style='letter-spacing:
+-.05pt'>також тих сімей, де працюють і чоловік, і жінка. </span><span
+style='letter-spacing:-.25pt'>Результати обстеження представлені таблицею 2.</span>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" align="center" style='text-align:center;text-indent:27.0pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1161"
+ type="#_x0000_t75" style='width:355.5pt;height:189pt'>
+ <v:imagedata src="303.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="474" height="252"
+src="304.jpg" v:shapes="_x0000_i1161" />
+  <![endif]>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:27.0pt;line-height:
+150%;background:white'><span style='font-size:14.0pt;line-height:150%;
+mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1162" type="#_x0000_t75"
+ style='width:12.75pt;height:12.75pt'>
+ <v:imagedata src="305.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="17" height="17"
+src="306.jpg" v:shapes="_x0000_i1162" />
+  <![endif]>
+  <span
+style='letter-spacing:-.1pt'><span style='mso-spacerun:yes'> </span>Яка
+    ймовірність, що пара, вибрана навмання в цьому районі,</span>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:27.0pt;line-height:
+150%;background:white'><span style='font-size:14.0pt;line-height:150%;
+letter-spacing:-.3pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">має два доходи?</span><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:27.0pt;line-height:
+150%;background:white'><span style='font-size:14.0pt;line-height:150%;
+mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1163" type="#_x0000_t75"
+ style='width:12pt;height:14.25pt'>
+ <v:imagedata src="307.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="16" height="19"
+src="308.jpg" v:shapes="_x0000_i1163" />
+  <![endif]>
+  <span
+style='letter-spacing:-.15pt'><span style='mso-spacerun:yes'> </span>Якщо<span
+style='mso-spacerun:yes'>   </span>навмання<span style='mso-spacerun:yes'>   </span>вибрана<span style='mso-spacerun:yes'>   </span>пара<span
+style='mso-spacerun:yes'>   </span>має<span style='mso-spacerun:yes'>   </span>два<span style='mso-spacerun:yes'>   </span>доходи,<span
+style='mso-spacerun:yes'>   </span>то<span style='mso-spacerun:yes'>   </span>яка</span>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:26.95pt;line-height:
+150%;background:white'><span style='font-size:14.0pt;line-height:150%;
+letter-spacing:-.2pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">ймовірність, що річний доход цієї
+  сімейної пари більший, ніж</span><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:26.95pt;line-height:
+150%;background:white'><span style='font-size:14.0pt;line-height:150%;
+letter-spacing:-.3pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">7500грн.?</span><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:26.95pt;line-height:
+150%;background:white'><span style='font-size:14.0pt;line-height:150%;
+mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1164" type="#_x0000_t75"
+ style='width:13.5pt;height:14.25pt'>
+ <v:imagedata src="309.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="18" height="19"
+src="310.jpg" v:shapes="_x0000_i1164" />
+  <![endif]>
+  <span
+style='letter-spacing:-.15pt'><span style='mso-spacerun:yes'> </span>Якщо<span
+style='mso-spacerun:yes'>   </span>навмання<span style='mso-spacerun:yes'>   </span>вибрана<span style='mso-spacerun:yes'>   </span>пара<span
+style='mso-spacerun:yes'>   </span>має<span style='mso-spacerun:yes'>   </span>два<span style='mso-spacerun:yes'>   </span>доходи,<span
+style='mso-spacerun:yes'>   </span>то<span style='mso-spacerun:yes'>   </span>яка </span><span style='letter-spacing:-.3pt'>ймовірність, що річний
+    доход цієї пари більший, ніж 2499грн.?
+  <o:p></o:p>
+</span></span></p>
+<p class="MsoNormal" style='text-indent:26.95pt;line-height:150%;background:white'><b><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.35pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">Розв'язання. </span></b><span style='font-size:
+14.0pt;line-height:150%;letter-spacing:-.35pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">Позначимо
+  події<sub>
+  <!--[if gte vml 1]><v:shape id="_x0000_i1165" type="#_x0000_t75"
+ style='width:75.75pt;height:14.25pt'>
+ <v:imagedata src="311.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="101" height="19"
+src="312.jpg" v:shapes="_x0000_i1165" />
+  <![endif]>
+  </sub></span><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.65pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">як:</span><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" align="center" style='text-align:center;text-indent:26.95pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk"><span style='mso-spacerun:yes'>         </span><sup>
+  <!--[if gte vml 1]><v:shape id="_x0000_i1166" type="#_x0000_t75"
+ style='width:240.75pt;height:136.5pt'>
+ <v:imagedata src="313.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="321" height="182"
+src="314.jpg" v:shapes="_x0000_i1166" />
+  <![endif]>
+  </sup>
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1167" type="#_x0000_t75" style='width:258pt;height:168pt'>
+ <v:imagedata src="315.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="344" height="224"
+src="316.jpg" v:shapes="_x0000_i1167" />
+  <![endif]>
+  <sup>
+    <o:p></o:p>
+  </sup></span></p>
+<p class="MsoNormal" align="center" style='text-align:center;text-indent:26.95pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p>&nbsp;</o:p>
+</span></p>
+<p class="MsoNormal" style='text-indent:26.95pt;line-height:150%;mso-outline-level:
+1;background:white'><span style='font-size:14.0pt;line-height:150%;
+letter-spacing:-.45pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">Рисунок 6 </span><span
+style='font-size:14.0pt;line-height:150%;letter-spacing:-.35pt;mso-ansi-language:
+UK' lang="uk" xml:lang="uk">Нехай подія <i>Т </i>полягає в тому, що</span><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-indent:26.95pt;line-height:150%;background:white'><span style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK'
+lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape
+ id="_x0000_i1168" type="#_x0000_t75" style='width:234pt;height:21pt'>
+ <v:imagedata src="317.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="312" height="28"
+src="318.jpg" v:shapes="_x0000_i1168" />
+  <![endif]>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-indent:26.95pt;line-height:150%;background:white'><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.15pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">а) Ймовірність, що навмання вибрана пара має два доходи,
+  за </span><span style='font-size:14.0pt;line-height:150%;mso-ansi-language:
+UK' lang="uk" xml:lang="uk">формулою повної ймовірності дорівнює:
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:26.95pt;line-height:
+150%;background:white'><span style='font-size:14.0pt;line-height:150%;
+mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1169" type="#_x0000_t75"
+ style='width:269.25pt;height:74.25pt'>
+ <v:imagedata src="319.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="359" height="99"
+src="320.jpg" v:shapes="_x0000_i1169" />
+  <![endif]>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:26.95pt;line-height:
+150%;background:white'><span style='font-size:14.0pt;line-height:150%;
+mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p>&nbsp;</o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:26.95pt;line-height:
+150%;background:white'><span style='font-size:14.0pt;line-height:150%;
+mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p>&nbsp;</o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:26.95pt;line-height:
+150%;background:white'><sub><span style='font-size:14.0pt;line-height:
+150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1170"
+ type="#_x0000_t75" style='width:19.5pt;height:14.25pt'>
+ <v:imagedata src="321.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="26" height="19"
+src="322.jpg" v:shapes="_x0000_i1170" />
+  <![endif]>
+  <span
+style='letter-spacing:-.4pt'><span style='mso-spacerun:yes'> </span></span></span></sub><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.4pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">Використовуючи формулу <span class="SpellE">Байеса</span>,
+    знайдемо ймовірність </span><span style='font-size:14.0pt;line-height:
+150%;letter-spacing:-.3pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">того, що навмання вибрана пара
+      має річний доход біль­</span><span style='font-size:14.0pt;line-height:
+150%;letter-spacing:-.35pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">ше 7500грн. за умови, що
+        обидва члени сім'ї працюють:</span><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" align="center" style='text-align:center;text-indent:26.95pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1171"
+ type="#_x0000_t75" style='width:213pt;height:38.25pt'>
+ <v:imagedata src="323.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="284" height="51"
+src="324.jpg" v:shapes="_x0000_i1171" />
+  <![endif]>
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" style='text-align:justify;text-indent:26.95pt;line-height:
+150%;background:white'><sub><span style='font-size:14.0pt;line-height:
+150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1172"
+ type="#_x0000_t75" style='width:21pt;height:17.25pt'>
+ <v:imagedata src="325.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="28" height="23"
+src="326.jpg" v:shapes="_x0000_i1172" />
+  <![endif]>
+  <span
+style='letter-spacing:-.15pt'><span style='mso-spacerun:yes'> </span></span></span></sub><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.15pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">Ймовірність, що випадково вибрана пара має річний </span><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.35pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk">доход більше, </span><span style='font-size:14.0pt;
+line-height:150%;letter-spacing:.6pt;mso-ansi-language:UK' lang="uk" xml:lang="uk">ніж</span><span style='font-size:14.0pt;line-height:150%;letter-spacing:-.35pt;
+mso-ansi-language:UK'
+lang="uk" xml:lang="uk"> 2499грн. за умови, що обидва члени </span><span
+style='font-size:14.0pt;line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">сім'ї працюють,
+    дорівнює
+  <o:p></o:p>
+</span></p>
+<p class="MsoNormal" align="center" style='text-align:center;text-indent:26.95pt;
+line-height:150%;background:white'><span style='font-size:14.0pt;
+line-height:150%;mso-ansi-language:UK' lang="uk" xml:lang="uk">
+  <!--[if gte vml 1]><v:shape id="_x0000_i1173"
+ type="#_x0000_t75" style='width:317.25pt;height:73.5pt'>
+ <v:imagedata src="327.jpg" o:title=""/>
+</v:shape><![endif]-->
+  <![if !vml]>
+  <img width="423" height="98"
+src="328.jpg" v:shapes="_x0000_i1173" /></span></p>
+</body>
+</html>
