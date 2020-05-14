@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Документ без названия</title>
+</head>
+
+<body>
+<p align="center"><strong>Інтерполяційний  Поліном Ньютона</strong><br />
+  Многочлен Лагранжа незручний для практичного використання, внаслідок  своєї громіздкості, і тому в основному він використовується для теоретичних  досліджень. Розглянемо більш просту обчислювальну схему. <br />
+  Досить часто інтерполювання проводиться для функцій, які визначені  таблицею з рівновіддаленими вузлами. В цьому випадку крок таблиці <img width="255" height="35" src="407.gif" /> є сталою величиною. Для таких таблиць побудова  інтерполяційних формул спрощується. Введемо деякі поняття. <br />
+  Нехай мають місце рівності (1) При цьому різниці <img width="227" height="35" src="408.gif" />  є сталими величинами. Різниці вигляду <img width="408" height="35" src="409.gif" />значення функції в сусідніх вузлах інтерполяції, називаються  скінченими різницями першого порядку. <br />
+  Із скінчених різниць першого порядку утворюють скінченні різниці  другого порядку:  <img width="132" height="40" src="410.gif" />             <img width="151" height="32" src="411.gif" /> <br />
+Продовжуючи цей процес за даними таблиці значень функції у вузлах  інтерполяції, можна скласти таблицю скінчених різниць. </p>
+<p>&nbsp;</p>
+<table border="1" cellspacing="0" cellpadding="0" width="735">
+  <tr>
+    <td width="42"><p align="center"><img width="23" height="35" src="412.gif" /></p></td>
+    <td width="82"><p align="center"><img width="56" height="30" src="413.gif" /></p></td>
+    <td width="169"><p align="center"><img width="69" height="32" src="414.gif" /></p></td>
+    <td width="189"><p align="center"><img width="81" height="36" src="415.gif" /></p></td>
+    <td width="211"><p align="center"><img width="80" height="36" src="416.gif" /></p></td>
+    <td width="41"><p align="center"><strong>...</strong></p></td>
+  </tr>
+  <tr>
+    <td width="42"><p align="center"><img width="27" height="35" src="417.gif" /></p></td>
+    <td width="82"><p align="center"><img width="65" height="33" src="418.gif" /></p></td>
+    <td width="169"><p align="center"><strong><img width="151" height="36" src="419.gif" /></strong></p></td>
+    <td width="189"><p align="center"><img width="164" height="33" src="420.gif" /></p></td>
+    <td width="211"><p align="center"><img width="185" height="37" src="421.gif" /></p></td>
+    <td width="41"><p align="center">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="42"><p align="center"><img width="24" height="33" src="422.gif" /></p></td>
+    <td width="82"><p align="center"><img width="64" height="33" src="423.gif" /></p></td>
+    <td width="169"><p align="center"><img width="141" height="31" src="424.gif" /></p></td>
+    <td width="189"><p align="center"><img width="159" height="30" src="425.gif" /></p></td>
+    <td width="211"><p align="center"><strong>...</strong></p></td>
+    <td width="41"><p align="center">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="42"><p align="center"><img width="28" height="33" src="426.gif" /></p></td>
+    <td width="82"><p align="center"><img width="68" height="33" src="427.gif" /></p></td>
+    <td width="169"><p align="center"><img width="151" height="34" src="428.gif" /></p></td>
+    <td width="189"><p align="center"><strong>...</strong></p></td>
+    <td width="211"><p align="center">&nbsp;</p></td>
+    <td width="41"><p align="center">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="42"><p align="center"><img width="27" height="35" src="429.gif" /></p></td>
+    <td width="82"><p align="center"><img width="67" height="35" src="430.gif" /></p></td>
+    <td width="169"><p align="center"><strong>...</strong></p></td>
+    <td width="189"><p align="center">&nbsp;</p></td>
+    <td width="211"><p align="center">&nbsp;</p></td>
+    <td width="41"><p align="center">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="42"><p align="center"><strong>...</strong></p></td>
+    <td width="82"><p align="center"><strong>...</strong></p></td>
+    <td width="169"><p align="center">&nbsp;</p></td>
+    <td width="189"><p align="center">&nbsp;</p></td>
+    <td width="211"><p align="center">&nbsp;</p></td>
+    <td width="41"><p align="center">&nbsp;</p></td>
+  </tr>
+</table>
+<p>Скінчені різниці будь-якого  порядку можна записати за допомогою значень функції. Розглянемо, наприклад,  скінчену різницю другого порядку:</p>
+<p><img width="16" height="33" src="431.gif" /><img width="677" height="40" src="432.gif" /></p>
+<p>&nbsp;</p>
+<p>Методом математичної індукції можна довести, що має місце рівність:</p>
+<p>&nbsp;</p>
+<p><img width="605" height="80" src="433.gif" /></p>
+</body>
+</html>
